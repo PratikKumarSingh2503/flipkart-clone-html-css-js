@@ -1,0 +1,58 @@
+export const marvelProductData = [
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4RHCuYcRQy66TXYXRJEDlr-DzgrBAto4nQ&usqp=CAU",
+        name : "Cards",
+        discount : "Card",
+        brand : "Card",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynT1-6XwVfBp2zN5A6WyMjsEhXa9K20BvKg&usqp=CAU",
+        name : "Mobile Covers",
+        discount : "Mobile Covers",
+        brand : "Mobile Covers",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxJXjUcJQ38IcPh1Mjw5nZvBwp6JcZom9pQ&usqp=CAU",
+        name : "Stickers",
+        discount : "Stickers",
+        brand : "Stickers",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6d-8hp9EC9lrQUIYWlXw_wUl8mr27VV9Kg&usqp=CAU",
+        name : "Stationary Items",
+        discount : "Stationary Items",
+        brand : "Stationary Items",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk0h24UwhOmZJcIFyBQoFWhZOoVd2kg_2aLg&usqp=CAU",
+        name : "Accesories",
+        discount : "Accesories",
+        brand : "Accesories",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ309U430N2j0ZOalLfHuyQHoF55YSY9b-PUQ&usqp=CAU",
+        name : "Toys",
+        discount : "Toys",
+        brand : "Toys",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ309U430N2j0ZOalLfHuyQHoF55YSY9b-PUQ&usqp=CAU",
+        name : "Toys",
+        discount : "Toys",
+        brand : "Toys",
+        link : "",
+    },
+    {
+        img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ309U430N2j0ZOalLfHuyQHoF55YSY9b-PUQ&usqp=CAU",
+        name : "Toys",
+        discount : "Toys",
+        brand : "Toys",
+        link : "",
+    },
+]
