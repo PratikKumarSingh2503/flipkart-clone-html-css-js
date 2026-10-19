@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/component.css" />
+  </head>
+  <body>
+    <!-- Sticky Top Header -->
+
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+          <a href="index.html" class="logo">
+            <img src="images/icon.png" alt="Flipkart Logo" />
+            <div class="logo-text">
+              <span class="explore"
+                >Explore <span class="plus">Plus</span></span
+              >
+              <img src="images/plus.png" alt="Plus" class="plus-icon" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search for products, brands and more"
+              class="search-input"
+              aria-label="Search products"
+            />
+            <button type="submit" class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side Icons -->
+        <div class="user-actions">
+          <div class="action-item">
+            <a href="#" class="action-link">
+              <i class="fas fa-user"></i>
+              <span class="action-text">Login</span>
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="action-link">
+              <span class="action-text">Become a Seller</span>
+            </a>
+          </div>
+          <div class="action-item dropdown">
+            <a href="#" class="action-link">
+              <span class="action-text">More</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+          <div class="action-item cart">
+            <a href="cart.html" class="action-link">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="action-text">Cart</span>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Second Navbar with Categories -->
+    <nav class="category-nav">
+      <div class="category-container">
+        <a href="products.html?category=All" class="category-item">
+          <i class="fas fa-th-large"></i>
+          <span class="category-text">All Products</span>
+        </a>
+        <a href="products.html?category=Mobiles" class="category-item">
+          <i class="fas fa-mobile-alt"></i>
+          <span class="category-text">Mobiles</span>
+        </a>
+        <a href="products.html?category=Fashion" class="category-item">
+          <i class="fas fa-tshirt"></i>
+          <span class="category-text">Fashion</span>
+        </a>
+        <a href="products.html?category=Electronics" class="category-item">
+          <i class="fas fa-desktop"></i>
+          <span class="category-text">Electronics</span>
+        </a>
+        <a href="products.html?category=Appliances" class="category-item">
+          <i class="fas fa-tv"></i>
+          <span class="category-text">Appliances</span>
+        </a>
+        <a href="products.html?category=Top%20Offers" class="category-item">
+          <i class="fas fa-tag"></i>
+          <span class="category-text">Top Offers</span>
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

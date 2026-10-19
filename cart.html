@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <div class="cart-page">
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="price-box">
+        <h2>PRICE DETAILS</h2>
+
+        <hr />
+
+        <p>
+          Total Items :
+          <span id="totalItems">0</span>
+        </p>
+
+        <p>Total Price : ₹<span id="totalPrice">0</span></p>
+
+        <p>
+          Discount :
+          <span id="discount" style="color: green"> -₹0 </span>
+        </p>
+
+        <p>
+          Delivery :
+          <span style="color: green"> FREE </span>
+        </p>
+
+        <hr />
+
+        <h3>Grand Total : ₹<span id="grandTotal">0</span></h3>
+
+        <br />
+
+        <button id="checkoutButton" onclick="checkout()">
+          Proceed To Checkout
+        </button>
+      </div>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="js/order-utils.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

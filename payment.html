@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Flipkart Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <header class="payment-header">
+        <a class="brand" href="index.html">Flipkart</a>
+        <span><span class="secure-icon">✓</span> Secure Checkout Demo</span>
+    </header>
+
+    <main class="payment-container">
+        <section class="payment-panel">
+            <div class="step-heading">
+                <span class="step-number">1</span>
+                <div>
+                    <h1>Choose Payment Method</h1>
+                    <p>Select how you would like to pay.</p>
+                </div>
+            </div>
+
+            <form id="paymentForm">
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod"
+                           value="UPI (Demo)" checked>
+                    <span class="payment-symbol">↗</span>
+                    <span>
+                        <strong>UPI</strong>
+                        <small>Simulated payment — no real transaction</small>
+                    </span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod"
+                           value="Card (Demo)">
+                    <span class="payment-symbol">▣</span>
+                    <span>
+                        <strong>Credit / Debit Card</strong>
+                        <small>Demo only — do not enter card details</small>
+                    </span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod"
+                           value="Cash on Delivery (Demo)">
+                    <span class="payment-symbol">₹</span>
+                    <span>
+                        <strong>Cash on Delivery</strong>
+                        <small>Simulated order for portfolio demonstration</small>
+                    </span>
+                </label>
+
+                <p class="demo-notice">
+                    This is a portfolio demo. No real payment will be made.
+                </p>
+
+                <button class="primary-button" id="placeOrderButton" type="submit">
+                    Place Demo Order
+                </button>
+
+                <a class="back-link" href="checkout.html">← Back to address</a>
+            </form>
+        </section>
+
+        <aside class="order-panel">
+            <h2>Order Summary</h2>
+            <div id="paymentItems"></div>
+            <hr>
+
+            <div class="price-row">
+                <span>Subtotal</span>
+                <span>₹<span id="paymentSubtotal">0</span></span>
+            </div>
+            <div class="price-row">
+                <span>Discount</span>
+                <span class="discount">−₹<span id="paymentDiscount">0</span></span>
+            </div>
+            <div class="price-row">
+                <span>Delivery</span>
+                <span class="discount">FREE</span>
+            </div>
+            <hr>
+
+            <div class="price-row total-row">
+                <strong>Total Payable</strong>
+                <strong>₹<span id="paymentTotal">0</span></strong>
+            </div>
+
+            <div class="delivery-box">
+                <strong>Delivering to</strong>
+                <p id="deliveryAddress">Loading address…</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/order-utils.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

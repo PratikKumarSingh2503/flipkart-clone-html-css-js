@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful | Flipkart Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <header class="payment-header">
+        <a class="brand" href="index.html">Flipkart</a>
+        <span>Order Status</span>
+    </header>
+
+    <main class="success-container">
+        <section class="success-card">
+            <div class="success-icon" aria-hidden="true">✓</div>
+
+            <p class="success-label">ORDER PLACED</p>
+            <h1>Your demo order was successful!</h1>
+
+            <p class="success-message">
+                Thank you for shopping with us. Your order details
+                are saved in this browser for this demonstration.
+            </p>
+
+            <div class="reference-box">
+                <span>Order reference</span>
+                <strong id="orderId">Loading...</strong>
+                <span id="orderDate"></span>
+            </div>
+
+            <div class="success-details">
+                <h2>Order Summary</h2>
+                <div id="successItems"></div>
+                <hr>
+
+                <div class="price-row">
+                    <span>Subtotal</span>
+                    <span>₹<span id="successSubtotal">0</span></span>
+                </div>
+
+                <div class="price-row">
+                    <span>Discount</span>
+                    <span>−₹<span id="successDiscount">0</span></span>
+                </div>
+
+                <div class="price-row">
+                    <span>Delivery</span>
+                    <span>FREE</span>
+                </div>
+
+                <div class="price-row total-row">
+                    <strong>Total</strong>
+                    <strong>₹<span id="successTotal">0</span></strong>
+                </div>
+
+                <hr>
+
+                <h3>Delivery Address</h3>
+                <p id="successAddress"></p>
+
+                <h3>Payment Method</h3>
+                <p id="successPayment"></p>
+
+                <p class="demo-notice">
+                    Portfolio demonstration only. No real payment
+                    or shipment has been processed.
+                </p>
+            </div>
+
+            <div class="success-actions">
+                <a class="primary-button" href="products.html">
+                    Continue Shopping
+                </a>
+                <a class="back-link" href="index.html">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/order-utils.js"></script>
+    <script src="js/success.js"></script>
+</body>
+</html>

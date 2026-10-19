@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Flipkart</h2>
+      </div>
+
+      <div class="menu">
+        <a href="cart.html">← Back to Cart</a>
+      </div>
+    </header>
+
+    <div class="checkout-container">
+      <div class="address">
+        <h2>Delivery Address</h2>
+
+        <input type="text" id="name" placeholder="Full Name" />
+
+        <input type="text" id="mobile" placeholder="Mobile Number" />
+
+        <textarea id="address" placeholder="House No, Street, Area"></textarea>
+
+        <input type="text" id="city" placeholder="City" />
+
+        <input type="text" id="state" placeholder="State" />
+
+        <input type="text" id="pincode" placeholder="Pincode" />
+
+        <button id="continueButton" type="button" onclick="saveAddress()">
+          Continue To Payment
+        </button>
+      </div>
+
+      <div class="summary">
+        <h2>Order Summary</h2>
+
+        <div id="summary"></div>
+
+        <hr />
+
+        <p>Subtotal: ₹<span id="subtotal">0</span></p>
+
+        <p>Discount: −₹<span id="discount">0</span></p>
+
+        <p>Delivery: <span>FREE</span></p>
+
+        <h3>Grand Total: ₹<span id="total">0</span></h3>
+      </div>
+    </div>
+
+    <script src="js/order-utils.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

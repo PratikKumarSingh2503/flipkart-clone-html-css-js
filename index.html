@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Clone - Online Shopping India</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- SLIDER -->
+
+    <main class="main-content">
+      <!-- Hero Banner Section -->
+      <section class="hero-banner">
+        <div class="hero-slider">
+          <div class="slide active">
+            <img src="images/s1.webp" alt="Hero Banner 1" />
+          </div>
+          <div class="slide">
+            <img src="images/s2.webp" alt="Hero Banner 2" />
+          </div>
+          <div class="slide">
+            <img src="images/s3.webp" alt="Hero Banner 3" />
+          </div>
+          <div class="slide">
+            <img src="images/s4.webp" alt="Hero Banner 3" />
+          </div>
+          <div class="slide-controls">
+            <button class="slide-btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slide-btn next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product sections are rendered from the catalog in js/product.js. -->
+      <div id="home-products"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- <footer>
+      <p>© 2026 Flipkart Clone | HTML CSS JavaScript</p>
+    </footer> -->
+
+    <script>
+      fetch("component/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="js/header.js"></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="js/product-list.js"></script>
+  </body>
+</html>
